@@ -1,0 +1,244 @@
+
+body {
+    background-color: #000;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 1200px;
+    color: #fff;
+    margin-top: 60px;
+    
+
+    &__logo {
+        font-family: Inter;
+        font-style: Regular;
+        font-size: 16px;
+        line-height: 19px;
+        line-height: 100%;
+    }
+    &__nav {
+        display: flex;
+        list-style: none;
+        font-family: Inter;
+font-style: Regular;
+font-size: 12px;
+line-height: 15px;
+line-height: 100%;
+align-items: left;
+vertical-align: top;
+
+    }
+    &__nav-link {
+        padding-left: 20px;
+        color: #FAFAF9;
+    }
+}
+a {
+    text-decoration: none;
+}
+.info__box {
+    margin-left: 117px;
+    position: relative;
+    
+
+    &-topic {
+        font-family: "SF Pro Display";
+font-style: heavy;
+font-size: 172px;
+line-height: 170px;
+text-align: Left;
+vertical-align: top;
+letter-spacing: -2px;
+max-width: 800px;
+color:#FAFAF9;
+text-transform: uppercase;
+margin-top: 182px;
+animation: topic 2s linear 1;
+opacity: 1;
+    }
+    &-text{
+font-family: "Inter";
+color: rgba(239, 237, 232, 0.65);
+font-style: Regular;
+font-size: 16px;
+line-height: 24px;
+line-height: 124%;
+text-align: left;
+vertical-align: top;
+letter-spacing: 0.5px;
+max-width: 400px;
+margin-top: 46px;
+animation: tex 2.5s linear 1;
+opacity: 1;
+    }
+    &-button {
+        width: 200px;
+        height: 40px;
+        background-color: #E6533C;
+        border-radius: 10px;
+        margin-top: 50px;
+        font-family: "Poppins";
+font-style: SemiBold;
+font-size: 18px;
+line-height: 22px;
+line-height: 81%;
+text-align: center;
+vertical-align: Top;
+letter-spacing: 1px;
+color: #fff;
+padding-top: 24px;
+cursor: pointer;
+    }
+    &-photo_man {
+        position: absolute;
+        top:18%;
+        right: 15%;
+        animation: man 5s linear 1;
+        opacity: 1;
+    }
+    &-photo_video {
+        position: absolute;
+        right: 40%;
+        bottom: 2%;
+        animation: video 7s linear 1;
+    }
+    &-photo_km {
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        animation: km 7s linear 1;
+    }
+    &-photo_free {
+        position: absolute;
+        right: 5%;
+        animation: free 7s linear 1;
+    }
+}
+@keyframes km {
+    0% {
+        top: -100%;
+    }
+    86% {
+        top: -50%;
+    }
+}
+@keyframes free {
+    0%{
+       right: -100%;
+    }
+    86% {
+       right: -50%;
+    }
+}
+@keyframes video {
+    0% {
+    bottom: -100%;
+    }
+    86% {
+        bottom:-40%;
+    }
+}
+@keyframes topic {
+    0% {
+        opacity: 0;
+    }
+}
+@keyframes tex {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+}
+@keyframes man {
+    0% {
+        right: -50%;
+    }
+    60% {
+        right: -50%;
+    }
+}
+.main {
+    overflow: hidden;
+}
+.footer {
+    margin-top: 112px;
+    margin-left: 117px;
+    &__text {
+        font-family: "Inter";
+font-style: Semi Bold;
+font-size: 14px;
+line-height: 22px;
+line-height: 130%;
+text-align: left;
+vertical-align: top;
+letter-spacing: 1px;
+color: rgba(239, 237, 232, 0.65);
+    }
+    &__img {
+        margin-top: 33px;
+    }
+}
+
+
+.input__button-1[type="checkbox"]:checked ~ .label__button-1 .info__box-button{
+position: absolute;
+z-index: 51;
+bottom: -50%;
+left: 40%;
+background-color: #000;
+}
+.input__button-1 {
+    display: none;
+  }
+  .input__button-1[type="checkbox"]:checked ~ .second {
+   display: block;
+   position: absolute;
+   top: 0;
+   z-index: 50;
+   width: 1450px;
+   margin-left: -110px;
+  }
+  @keyframes second {
+    0% {
+       opacity: 0;
+    }
+  }
+  .second {
+    display: none;
+    background-image: url(https://img.freepik.com/free-vector/winter-blue-and-pink-gradient-background-vector_53876-117276.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 800px;
+    animation: second 1s linear 1;
+    
+    &__text {
+        position: absolute;
+        bottom: 30%;
+        left: 43%;
+        font-size: 20px;
+        font-style: italic;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    &__topic {
+        display: flex;
+        font-size: 250px;
+        align-items: center;
+        justify-content: center;
+        font-style: italic;
+    }
+    &-topic-2 {
+        padding-left: 250px;
+    }
+    &__img {
+        margin-top: -350px;
+        margin-left: 130px;
+    }
+  }
